@@ -1,3 +1,10 @@
+
+// Init / Tests
+chrome.runtime.onInstalled.addListener((() => {
+    console.log('hello');
+}))
+
+// Event click btn -- LOGIN GOOGLE
 document.addEventListener('DOMContentLoaded', function () {
     let btn = document.getElementById('login-btn');
     btn.addEventListener('click', function() {
@@ -7,9 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-chrome.runtime.onInstalled.addListener((() => {
-    console.log('hello');
-}))
+// Event Tabs -- WebKarma Score
 chrome.tabs.onActivated.addListener(function(activeInfo) {
     chrome.tabs.get(activeInfo.tabId, function(tab) {
         let currentUrl = new URL(tab.url);
@@ -25,4 +30,3 @@ chrome.tabs.onActivated.addListener(function(activeInfo) {
 */
     });
 });
-console.log(document)
