@@ -39,7 +39,7 @@ body {
     justify-content: center;
 }
 
-#signin-btn {
+#login-btn {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #67BF6B;
@@ -50,8 +50,12 @@ body {
     width: 100%;
 }
 
-#signin-btn:hover {
+#login-btn:hover {
     background-color: #101010;
+}
+
+#login-btn-active {
+    display: none;
 }
 
 .footer {
