@@ -50,6 +50,10 @@ body {
     width: 100%;
 }
 
+#logout-btn {
+    display: none;
+}
+
 #login-btn:hover {
     background-color: #101010;
 }
